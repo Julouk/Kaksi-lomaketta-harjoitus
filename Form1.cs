@@ -22,19 +22,21 @@ namespace Kaksi_lomaketta_harjoitus
             
             if ("admin" == Käyttätunnusjulius && "password" == password)
             {
-                Form lomake2 = new Form2();
+                Form lomake2 = new Form2(Käyttätunnusjulius);
                 lomake2.Show();
                 this.Hide();
             }
-            if ("Julius" == Käyttätunnusjulius && "Qwerty123" == password)
+           
+           else if ("Julius" == Käyttätunnusjulius && "Qwerty123" == password)
             {
-                Form lomake2 = new Form2();
+                Form lomake2 = new Form2(Käyttätunnusjulius);
                 lomake2.Show();
                 this.Hide();
             }
-            if ("Julle" == Käyttätunnusjulius && "Salasana" == password)
+            
+          else if ("Julle" == Käyttätunnusjulius && "Salasana" == password)
             {
-                Form lomake2 = new Form2();
+                Form lomake2 = new Form2(Käyttätunnusjulius);
                 lomake2.Show();
                 this.Hide();
             }

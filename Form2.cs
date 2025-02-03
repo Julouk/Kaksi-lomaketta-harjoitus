@@ -12,9 +12,10 @@ namespace Kaksi_lomaketta_harjoitus
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        public Form2(string KT)
         {
             InitializeComponent();
+            labelKT.Text = KT;
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -25,6 +26,16 @@ namespace Kaksi_lomaketta_harjoitus
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnLaske_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
